@@ -255,3 +255,41 @@ console.log("La ultima posicion de las galletas es: ", dulces.lastIndexOf("galle
 //valueOf : valor de
 console.log(dulces.valueOf());
 //includes
+
+
+let numeroInicial = 1;
+
+let valorLimite = prompt(
+  "Hola, por favor ingresa un numero entero positivo que sea el limite"
+);
+
+while (numeroInicial <= valorLimite) { //MIENTRAS el numero inicial sea menor que el limite, ejecutamos lo de abajo
+  if (numeroInicial % 2 != 0) { //si al dividir el numero inicial entre 2, el residuo es diferente de 0 (es impar)...
+    console.log(numeroInicial); //Imprimimos el valor de la variable
+  }
+  numeroInicial++; // Incrementamos de uno en uno nuestra variable inicial
+}
+
+// //
+
+// Sentencia WHILE (mientras)
+
+// Esta sentencia nos va a permitr recorrer un bloque de codigo SIEMPRE que se cumpla una condicion especifica, donde el resultado debe ser true
+
+// la estructura de WHILE es:
+
+// palabraReservada while (condicion que tiene que ser true) {
+//     //codigo a ejecutar
+// }
+// //
+
+/*
+
+Do While (HACER MIENTRAS O HACER HASTA)
+
+El bucle do while nos sirve para ejecutar una sentencia especififcada hasta que la condicion de aprobacion se evalua como falsa. La condicion se evalua despues de ejecutar la sentencia, dando como resultado que la sentencia especificada se ejecuta al menos una vez.
+
+En pocas palabras, con el while preguntamos una vez, evaluamos la condicion y ejecutamos la instruccion. Con el do while, ejecutamos la instruccion al menos una vez, y luego preguntamos la condicion.
+
+
+*/
